@@ -1,10 +1,11 @@
 {
-  "name": " ",
+  "name": "employeee-directory",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
+  "keywords": ["Vanilla Javascript", "Jest"],
   "license": "",
   "author": "",
+  "type": "module",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",

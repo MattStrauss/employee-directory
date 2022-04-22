@@ -1,14 +1,22 @@
-class Employee {
+export class Employee {
 
-  constructor(firstName, lastName) {
-    this.firstName = firstName
-    this.lastName = lastName
+  constructor(firstName, lastName, email, phone) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.phone = phone;
   }
 
-  fullName() {
+  getFullName() {
     return this.firstName + ' ' + this.lastName
   }
 
-}
+  getEmail() {
+    return this.email;
+  }
 
-module.exports = Employee;
+  getPhone() {
+    return this.phone;
+  }
+
+}
