@@ -11,6 +11,14 @@ export class Employee {
     return this.firstName + ' ' + this.lastName
   }
 
+  getFirstName() {
+    return this.firstName
+  }
+
+  getLastName() {
+    return this.lastName
+  }
+
   getEmail() {
     return this.email;
   }
