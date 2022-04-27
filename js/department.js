@@ -5,4 +5,12 @@ export class Department {
     this.number = number
   }
 
+  getName() {
+    return this.name;
+  }
+
+  getNumber() {
+    return this.number;
+  }
+
 }
