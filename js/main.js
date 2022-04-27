@@ -67,9 +67,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 const toggleModal = function () {
+
   let modal = document.getElementById('employeeModal');
   if (modal.classList.contains("hidden")) {
+
     modal.classList.remove("hidden");
+
+    if (modalMode === 'edit') {
+      document.getElementById('editHeading').classList.remove("hidden");
+      document.getElementById('editIcon').classList.remove("hidden");
+      document.getElementById('addHeading').classList.add("hidden");
+      document.getElementById('addIcon').classList.add("hidden");
+    } else {
+      document.getElementById('editHeading').classList.add("hidden");
+      document.getElementById('editIcon').classList.add("hidden");
+      document.getElementById('addHeading').classList.remove("hidden");
+      document.getElementById('addIcon').classList.remove("hidden");
+    }
+
   } else {
     modal.classList.add("hidden");
   }
@@ -81,6 +96,9 @@ const clearModal = function () {
   document.getElementById("department").selectedIndex = 0;
   document.getElementById("email").value = "";
   document.getElementById("phone").value = "";
+
+  modalMode = "add";
+  modalEditedEmployeeIndex = -1;
 }
 
 const loadModalForEdit = function (employee, index) {
