@@ -1,6 +1,6 @@
 const Department = require('../js/department');
 
-test('Department constructs with a name and number', () => {
-  let testDepartment = new Department('Accounting', '4')
-  expect(testDepartment).toEqual({name: 'Accounting', number: '4'});
+test('Department constructs with a name', () => {
+  let testDepartment = new Department('Accounting')
+  expect(testDepartment).toEqual({name: 'Accounting', number: 1});
 });

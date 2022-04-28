@@ -1,4 +1,4 @@
-export class Department {
+class Department {
 
   constructor(name) {
     this.name = name
@@ -25,3 +25,5 @@ export class Department {
   }
 
 }
+
+module.exports = Department;
