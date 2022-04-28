@@ -1,6 +1,7 @@
 const Employee = require('../js/employee');
 const Department = require("../js/department");
 
+
 test('Employee constructs with a active status, first, last name, email, phone and department', () => {
   let testEmployee = new Employee(true, 'Jane', 'Doe', "jane@example.com", "717-555-1212",
     new Department("Accounting"))

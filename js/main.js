@@ -1,5 +1,5 @@
-import {Employee} from './employee';
-import {Department} from './department';
+const Employee = require('./employee');
+const Department = require("./department");
 
 /**
  * Main App Data

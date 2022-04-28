@@ -1,3 +1,5 @@
+const Department = require('./department');
+
 class Employee {
 
   constructor(active, firstName, lastName, email, phone, department) {
