@@ -1,7 +1,7 @@
 const Employee = require('../js/employee');
 
-test('Employee constructs with a first and last name', () => {
-  let testEmployee = new Employee('Jane', 'Doe')
+test('Employee constructs with a first, last name, email, phone and department', () => {
+  let testEmployee = new Employee('Jane', 'Doe', )
   expect(testEmployee).toEqual({firstName: 'Jane', lastName: 'Doe'});
 });
 
