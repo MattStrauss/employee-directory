@@ -11,6 +11,16 @@ test("getName returns Department instance name", () => {
 });
 
 test("getNumber returns correct digit depending on instance name", () => {
+  let testDepartment = new Department("Marketing");
+  expect(testDepartment.getNumber()).toBe(2);
+});
+
+test("getNumber returns correct digit depending on instance name", () => {
+  let testDepartment = new Department("Administration");
+  expect(testDepartment.getNumber()).toBe(3);
+});
+
+test("getNumber returns correct digit depending on instance name", () => {
   let testDepartment = new Department("Finance");
   expect(testDepartment.getNumber()).toBe(4);
 });
