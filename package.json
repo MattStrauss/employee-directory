@@ -2,7 +2,10 @@
   "name": "employeee-directory",
   "version": "0.0.1",
   "description": "",
-  "keywords": ["Vanilla Javascript", "Jest"],
+  "keywords": [
+    "Vanilla Javascript",
+    "Jest"
+  ],
   "license": "",
   "author": "",
   "type": "module",
@@ -12,11 +15,11 @@
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "jest",
-    "test_coverage" : "jest --verbose --coverage --coverageReporters='text-summary'"
+    "test_coverage": "jest --verbose --coverage --coverageReporters='text-summary'"
   },
   "devDependencies": {
     "jest": "^27.5.1",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.3.1"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
